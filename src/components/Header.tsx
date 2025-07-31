@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { Menu, X } from "lucide-react"
-import { useAppSelector } from "../hooks/redux-hooks"
+// import { useAppSelector } from "../hooks/redux-hooks"
 import { ThemeSelector } from "./ThemeSelector"
 import "./Header.css"
 
@@ -15,8 +15,7 @@ const navigation = [
 
 export function Header() {
   const location = useLocation()
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const currentTheme = useAppSelector((state) => state.theme.currentTheme)
+  // const currentTheme = useAppSelector((state) => state.theme.currentTheme)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
