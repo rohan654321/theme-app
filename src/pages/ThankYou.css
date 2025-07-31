@@ -1,0 +1,471 @@
+.thankyou-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.thankyou-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.thankyou-card {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.thankyou-icon {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  animation: bounceIn 0.8s ease-out;
+}
+
+.thankyou-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.thankyou-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.thankyou-info {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.response-time,
+.contact-info {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.response-time:last-child,
+.contact-info:last-child {
+  margin-bottom: 0;
+}
+
+.countdown-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.countdown-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.countdown-number {
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.countdown-bar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.countdown-progress {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s linear;
+}
+
+.thankyou-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thankyou-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Theme 1 - Minimalist */
+.theme-theme1 .thankyou-card {
+  background: white;
+  border-color: #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.theme-theme1 .thankyou-icon {
+  color: #10b981;
+}
+
+.theme-theme1 .thankyou-title {
+  color: #1f2937;
+}
+
+.theme-theme1 .thankyou-message {
+  color: #6b7280;
+}
+
+.theme-theme1 .thankyou-info {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.theme-theme1 .response-time,
+.theme-theme1 .contact-info {
+  color: #374151;
+}
+
+.theme-theme1 .countdown-section {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+}
+
+.theme-theme1 .countdown-text {
+  color: #0c4a6e;
+}
+
+.theme-theme1 .countdown-number {
+  color: #0369a1;
+}
+
+.theme-theme1 .countdown-bar {
+  background: #e0f2fe;
+}
+
+.theme-theme1 .countdown-progress {
+  background: linear-gradient(90deg, #0ea5e9, #0284c7);
+}
+
+.theme-theme1 .primary-button {
+  background: #3b82f6;
+  color: white;
+}
+
+.theme-theme1 .primary-button:hover {
+  background: #2563eb;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.theme-theme1 .secondary-button {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.theme-theme1 .secondary-button:hover {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Theme 2 - Dark Sidebar */
+.theme-theme2 .thankyou-content {
+  margin-left: 0;
+}
+
+@media (min-width: 1024px) {
+  .theme-theme2 .thankyou-content {
+    margin-left: 280px;
+  }
+}
+
+.theme-theme2 .thankyou-card {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.theme-theme2 .thankyou-icon {
+  color: #10b981;
+}
+
+.theme-theme2 .thankyou-title {
+  color: #f9fafb;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .thankyou-message {
+  color: #d1d5db;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .thankyou-info {
+  background: #374151;
+  border: 1px solid #4b5563;
+}
+
+.theme-theme2 .response-time,
+.theme-theme2 .contact-info {
+  color: #e5e7eb;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .countdown-section {
+  background: #312e81;
+  border: 1px solid #4c1d95;
+}
+
+.theme-theme2 .countdown-text {
+  color: #c4b5fd;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .countdown-number {
+  color: #a78bfa;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .countdown-bar {
+  background: #1e1b4b;
+}
+
+.theme-theme2 .countdown-progress {
+  background: linear-gradient(90deg, #7c3aed, #6d28d9);
+}
+
+.theme-theme2 .primary-button {
+  background: #7c3aed;
+  color: white;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+}
+
+.theme-theme2 .primary-button:hover {
+  background: #6d28d9;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+}
+
+.theme-theme2 .secondary-button {
+  background: #374151;
+  color: #d1d5db;
+  border: 1px solid #4b5563;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .secondary-button:hover {
+  background: #4b5563;
+  color: #f9fafb;
+}
+
+/* Theme 3 - Colorful Cards */
+.theme-theme3 .thankyou-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.theme-theme3 .thankyou-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(238, 90, 36, 0.1));
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.theme-theme3 .thankyou-icon {
+  color: #10b981;
+  filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.3));
+}
+
+.theme-theme3 .thankyou-title {
+  color: white;
+  font-family: "Pacifico", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.theme-theme3 .thankyou-message {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+}
+
+.theme-theme3 .thankyou-info {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.theme-theme3 .response-time,
+.theme-theme3 .contact-info {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.theme-theme3 .countdown-section {
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(238, 90, 36, 0.2));
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.theme-theme3 .countdown-text {
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+
+.theme-theme3 .countdown-number {
+  color: #fbbf24;
+  font-family: "Pacifico", cursive;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.theme-theme3 .countdown-bar {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.theme-theme3 .countdown-progress {
+  background: linear-gradient(90deg, #ff6b6b, #ee5a24);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
+}
+
+.theme-theme3 .primary-button {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+  font-family: "Pacifico", cursive;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+
+.theme-theme3 .primary-button:hover {
+  background: linear-gradient(135deg, #ee5a24, #ff6b6b);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  transform: translateY(-3px) scale(1.05);
+}
+
+.theme-theme3 .secondary-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  font-family: "Pacifico", cursive;
+}
+
+.theme-theme3 .secondary-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .thankyou-container {
+    padding: 1rem;
+  }
+
+  .thankyou-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .thankyou-title {
+    font-size: 2rem;
+  }
+
+  .theme-theme3 .thankyou-title {
+    font-size: 2.2rem;
+  }
+
+  .thankyou-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .theme-theme2 .thankyou-container {
+    margin-left: 0;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .thankyou-card,
+  .thankyou-icon {
+    animation: none;
+  }
+
+  .countdown-progress {
+    transition: none;
+  }
+
+  .primary-button:hover,
+  .secondary-button:hover {
+    transform: none;
+  }
+}

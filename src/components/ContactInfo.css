@@ -1,0 +1,173 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  transition: all 0.3s ease;
+}
+
+.contact-info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.contact-info-content {
+  flex: 1;
+}
+
+.contact-info-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info-value {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.business-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.business-hours-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid;
+  opacity: 0.8;
+}
+
+/* Theme 1 - Minimalist */
+.theme-theme1 .contact-info-section {
+  background: #f9fafb;
+  border-color: #e5e7eb;
+}
+
+.theme-theme1 .contact-info-title,
+.theme-theme1 .contact-info-subtitle {
+  color: #1f2937;
+}
+
+.theme-theme1 .contact-info-icon {
+  background: #3b82f6;
+  color: white;
+}
+
+.theme-theme1 .contact-info-label {
+  color: #1f2937;
+}
+
+.theme-theme1 .contact-info-value {
+  color: #6b7280;
+}
+
+.theme-theme1 .business-hours-item {
+  color: #374151;
+  border-bottom-color: #e5e7eb;
+}
+
+/* Theme 2 - Dark Sidebar */
+.theme-theme2 .contact-info-section {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+.theme-theme2 .contact-info-title,
+.theme-theme2 .contact-info-subtitle {
+  color: #f9fafb;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .contact-info-icon {
+  background: #7c3aed;
+  color: white;
+}
+
+.theme-theme2 .contact-info-label {
+  color: #f9fafb;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .contact-info-value {
+  color: #d1d5db;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .business-hours-item {
+  color: #d1d5db;
+  border-bottom-color: #6b7280;
+  font-family: "Crimson Text", serif;
+}
+
+/* Theme 3 - Colorful Cards */
+.theme-theme3 .contact-info-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.theme-theme3 .contact-info-title,
+.theme-theme3 .contact-info-subtitle {
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+
+.theme-theme3 .contact-info-icon {
+  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  color: white;
+}
+
+.theme-theme3 .contact-info-label {
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+
+.theme-theme3 .contact-info-value {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.theme-theme3 .business-hours-item {
+  color: rgba(255, 255, 255, 0.9);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}

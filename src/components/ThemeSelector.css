@@ -1,0 +1,157 @@
+.theme-selector-trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 160px;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.theme-selector-content {
+  min-width: 180px;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  overflow: hidden;
+  animation: slideDown 0.2s ease;
+  border: 1px solid;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.theme-selector-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: none;
+}
+
+.theme-selector-item:hover {
+  transform: translateX(4px);
+}
+
+.theme-selector-item.active {
+  font-weight: bold;
+}
+
+/* Theme 1 - Minimalist */
+.theme-theme1 .theme-selector-trigger {
+  background: #f9fafb;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+.theme-theme1 .theme-selector-trigger:hover {
+  background: #f3f4f6;
+}
+
+.theme-theme1 .theme-selector-content {
+  background: white;
+  border-color: #e5e7eb;
+}
+
+.theme-theme1 .theme-selector-item {
+  color: #374151;
+  background: white;
+}
+
+.theme-theme1 .theme-selector-item:hover {
+  background: #f9fafb;
+}
+
+.theme-theme1 .theme-selector-item.active {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+/* Theme 2 - Dark Sidebar */
+.theme-theme2 .theme-selector-trigger {
+  background: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .theme-selector-trigger:hover {
+  background: #4b5563;
+}
+
+.theme-theme2 .theme-selector-content {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.theme-theme2 .theme-selector-item {
+  color: #d1d5db;
+  background: #1f2937;
+  font-family: "Crimson Text", serif;
+}
+
+.theme-theme2 .theme-selector-item:hover {
+  background: #374151;
+  color: #f9fafb;
+}
+
+.theme-theme2 .theme-selector-item.active {
+  background: #4b5563;
+  color: #f9fafb;
+}
+
+/* Theme 3 - Colorful Cards */
+.theme-theme3 .theme-selector-trigger {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+  font-family: "Pacifico", cursive;
+  backdrop-filter: blur(10px);
+}
+
+.theme-theme3 .theme-selector-trigger:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.theme-theme3 .theme-selector-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.theme-theme3 .theme-selector-item {
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+
+.theme-theme3 .theme-selector-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.theme-theme3 .theme-selector-item.active {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
